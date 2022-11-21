@@ -1,89 +1,68 @@
 import React, { Component } from "react";
-import axios from 'axios';
-//import { StyleSheet, div } from "react-native";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "./carousel.css";// requires a loader
+import "./styles.css"; 
 import { Carousel } from 'react-responsive-carousel';
-
-//list of images
-const images = [
-    "https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-    "https://images.unsplash.com/photo-1485550409059-9afb054cada4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80",
-    "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
-    "https://images.unsplash.com/photo-1429087969512-1e85aab2683d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-    "https://images.unsplash.com/photo-1505678261036-a3fcc5e884ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-   ];
-
-   //const styles = StyleSheet.create({
-    //container: {
-  //  flex: 1,
-   // backgroundColor: "#fff",
-  //  alignItems: "center",
-  //  justifyContent: "center"
-   // }});
+//import  PaytmButton  from '../Components/paytmButton';
 
 class Home extends Component {
+  
+
     state = {
-        posts: []
-    }
-    //axios gets the data from the url 
-    //and stores it in the posts array in the state
-    componentDidMount() {
-        axios.get('https://jsonplaceholder.typicode.com/posts')
-            .then(res => {
-                this.setState({
-                    posts: res.data.slice(10, 20)
-                })
-            })
-    }
-    deletePost = (id) => {
-        // todoList runs through the array of todos on list
-        const postList = this.state.posts.filter(posto => {
-            //finds the selected todo and deletes it
-            return posto.id !== id
-        });
-        this.setState({
-            posts: postList
-        })
+
     }
 
+    
     render() {
-        const { posts } = this.state;
-        const postList = posts.length ? (
-            posts.map(post => {
-                return (
-                    <div className="post card" key={post.id}>
-            
-
-                  
-                        <div className="card-content" onClick={() => { this.deletePost(post.id) }}>
-                            <span className="card-title">{post.title}</span>
-                            <p>{post.body}</p>
-                        </div>
-                    </div>
-                    
-                )
-            })
-        ) : (
-            <div className="center">No posts yet</div>
-        )
+      
         return (
-            <div className="container">
-                      <Carousel autoPlay = {true} interval = {3000} infiniteLoop = {true}>
+            <div >
+                      <Carousel autoPlay = {true} interval = {3000} infiniteLoop = {true} showThumbs={false}>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+                <img src={require('./images/unsplash1.jpg')} alt="first 1" />
                     <p className="legend">Legend 1</p>
                 </div>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1485550409059-9afb054cada4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80" />
+                    <img src={require('./images/unsplash2.jpg')} alt="mid 2"/>
                     <p className="legend">Legend 2</p>
                 </div>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" />
+                    <img src={require('./images/unsplash3.jpg')} alt="last 3" />
                     <p className="legend">Legend 3</p>
                 </div>
+                
             </Carousel>
-                <h4 className="center">Home</h4>
-                {postList}
+            
+            
+
+            <div className="container" style={{padding: 10 }}>
+            <h1>The Children's Hospital Trust</h1>
+            <h2>-----------------------------------</h2>
+
+            <h4 > A hospital dedicated entirely to children – especially children predominantly from impoverished communities throughout 
+            South Africa and Africa – is critically important. So important, that it needs a champion to make sure that it’s able to keep doing the
+             phenomenal work it does.</h4>
+            <h5>The Children’s Hospital Trust is an independent non-profit organization established in 1994 to raise funds to support specific projects and programmes to 
+            help advance child healthcare through the Red Cross War Memorial Children’s Hospital – the first stand-alone tertiary hospital, exclusively for children, in sub-Saharan Africa. 
+            The Trust raises funds for the upgrade and expansion of the Hospital’s buildings, the purchase of state-of-the-art medical equipment, new medical treatment projects and funds the training 
+            of medical professionals across Africa – ensuring that the Hospital 
+            not only retains its world-class stature, but is able to continue providing life-changing and life-saving care for children.</h5>
+            <h5>The Trust relies on donations in order to fund these needs. When you donate to the Trust, 100% of your donation goes towards funding projects that change children’s lives 
+            (and the lives of the people who love them). 
+            The operational costs of the Trust are funded from an endowment, so your generous contributions are never used to cover administration costs.</h5>
+
+
+             <div className='col '>
+                            <button type="button" className="btn">Donate</button>
+
+                            
+                            </div>
+                            <div style={{position:"relative", top:50}}>
+                            <iframe width="760" height="415"  src="https://www.youtube.com/embed/UtEJZTU6aS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                </div>
+                            
+            </div>
+
+         
             </div>
         )
     }
