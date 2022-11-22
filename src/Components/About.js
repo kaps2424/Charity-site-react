@@ -35,6 +35,7 @@ const About = () => {
             <button>Governance</button>
             <button>Resources</button>
         </form>
+{/* Approach section */}
         <h3 style={{fontWeight:"bold"}}>Approach</h3>   
         <h5>The Children’s Hospital Trust core programmes are based throughout Cape Town’s township communities and beyond. The Children’s Hospital Trust work focuses on early childhood development, the well-being of older persons and after-school initiatives that keep children safe and off the streets. The organisation strives to be a conduit for community-led change.</h5> 
         <h5>The ground-up approach is rooted in activism and champions local knowledge and solutions. The Children’s Hospital Trust is an organisation made up of over 100 committed field workers, most of whom come from the same communities that they work to uplift. Together, we actively work towards a more just society where human rights can be fully realised.</h5>
@@ -65,8 +66,9 @@ const About = () => {
           margin: "0"
         }} />
         
+  {/* History section */}      
+  
         <div className="container">
-
         <h3 style={{fontWeight:"bold"}}>History</h3>   
         <h5>In the early 1960s, Helen Lieberman and other courageous activists responded to the unjust conditions of South African Apartheid by setting up survival initiatives in the Western Cape. This led to a groundswell of similar initiatives being established in other parts of the country. Over the decades, this work expanded in many different fields, including early childhood development, disability care, foster homes, shelters, elderly care, economic empowerment, food security and youth development. In 1992, this organic growth and coordination of initiatives was formalised and Ikamva Labantu, meaning “Future of The People”, was launched as a non-governmental and non-profit organisation.</h5> 
         </div>
@@ -90,7 +92,45 @@ const About = () => {
         </div>
 
 
+{/* People section */}
+        <img src={require('./images/borderart.jpg')} alt="About 1" style={{
+         objectFit: "cover",
+          height: "25px",
+          width: "100%",
+        }} />
+        <div className="container">
+        <h3 style={{fontWeight:"bold"}}>People</h3>  
 
+        <div id="people-center">
+                        <div className="people-member">
+                            <img src={require('./images/director1.jpg')} alt="first 1" />
+                            <article style={{alignContent:'center'}}>
+                        
+                                <h2>John Dent</h2>
+                                <h5>Director</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        
+                            </article>   
+                        </div>
+                       
+                        <article className="people-member">
+                        <img src={require('./images/director2.jpg')} alt="mid 2"/>
+                            <h2>Rita Foster</h2>
+                            <h5>Finance manager</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                           
+                        </article>
+                        <article className="people-member">
+                        <img src={require('./images/director3.jpg')} alt="last 3" />
+                            <h2>Kennith Daniels</h2>
+                            <h5>Fund raising promoter</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                           
+                        </article>
+                    </div>
+
+
+        </div>
         </div>
     )
 }

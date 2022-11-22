@@ -159,7 +159,7 @@
     border-bottom-right-radius: 20px;
     display: flex;
     justify-content: space-around;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left : 0;
 }
@@ -299,3 +299,55 @@ form button{
     clear: both;
     display: table;
   }
+
+  .people-member{
+    /*text-align: center;*/
+    border: 1px solid #2e282a;
+    border-radius: 20px;
+    background: #f5f3f5;
+    transition: background 2s ease;
+    margin: 70px 0;
+}
+
+
+.people-member img{
+    width: 250px;
+    border-radius: 5%;
+    height: 250px;
+
+    
+    
+
+}
+
+#team-center{
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.team-member h2 {
+    text-transform: capitalize;
+}
+
+.team-member h5 {
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.team-member hr {
+    margin: 70%;
+    margin: 0 auto;
+    border: 1px solid #ffc914;
+}
+
+.team-member p {
+    line-height: 2;
+    margin: 10px;
+}
+
+
+
+
+
+

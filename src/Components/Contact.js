@@ -2,16 +2,15 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCoffee, fas , faAddressCard, faAddressBook, faHouse, faUsers } from '@fortawesome/free-solid-svg-icons'
-import { library } from "@fortawesome/fontawesome-svg-core";
 
-library.add(fab, faCoffee, faAddressCard, faAddressBook, faHouse, faUsers)
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { Fa, FaAddressBook, FaFacebook, FaGooglePlus, FaInstagram, FaTwitter } from 'react-icons/fa';
+
 
 
 const Contact = () => {
     return (
         <div >
-    
 
             <section className="contact">
             <div className="contact-center">
@@ -60,10 +59,10 @@ const Contact = () => {
                             <hr/>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
                             <div className="team-member-footer">
-                                <a href="#"><i className="fa fa-facebook"></i></a>
-                                <a href="#"><i className="fa fa-instagram"></i></a>
-                                <a href="#"><i className="fa fa-twitter"></i></a>
-                                <a href="#"><i className="fa fa-google-plus"></i></a>
+                                <a href="#"><FaFacebook/></a>
+                                <a href="#"><FaInstagram/></a>
+                                <a href="#"><FaTwitter/></a>
+                                <a href="#"><FaGooglePlus/></a>
                             </div>
                         </article>
                         <article className="team-member">
@@ -73,10 +72,10 @@ const Contact = () => {
                             <hr/> 
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
                             <div className="team-member-footer">
-                                <a href="#"><i className="fa fa-facebook"></i></a>
-                                <a href="#"><i className="fa fa-instagram"></i></a>
-                                <a href="#"><i className="fa fa-twitter"></i></a>
-                                <a href="#"><i className="fa fa-google-plus"></i></a>
+                            <a href="#"><FaFacebook/></a>
+                                <a href="#"><FaInstagram/></a>
+                                <a href="#"><FaTwitter/></a>
+                                <a href="#"><FaGooglePlus/></a>
                             </div>
                         </article>
                         <article className="team-member">
@@ -86,10 +85,10 @@ const Contact = () => {
                             <hr/>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
                             <div className="team-member-footer">
-                                <a href="#"><i className="fa fa-facebook"></i></a>
-                                <a href="#"><i className="fa fa-instagram"></i></a>
-                                <a href="#"><i className="fa fa-twitter"></i></a>
-                                <a href="#"><i className="fa fa-google-plus"></i></a>
+                            <a href="#"><FaFacebook/></a>
+                                <a href="#"><FaInstagram/></a>
+                                <a href="#"><FaTwitter/></a>
+                                <a href="#"><FaGooglePlus/></a>
                             </div>
                         </article>
                     </div>
