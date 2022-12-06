@@ -16,17 +16,29 @@ class Home extends Component {
       
         return (
             <div >
-                      <Carousel autoPlay = {true} interval = {3000} infiniteLoop = {true} showThumbs={false}>
+                      <Carousel autoPlay = {true} interval = {4000} infiniteLoop = {true} showThumbs={false}>
                 <div>
-                <img src={require('./images/unsplash1.jpg')} alt="first 1" />
+                <img src={require('./images/unsplash1.jpg')} alt="first 1" style={{
+         objectFit: "cover",
+          height: "500px",
+          width: "100%",
+        }}/>
                     <p className="legend">Legend 1</p>
                 </div>
                 <div>
-                    <img src={require('./images/unsplash2.jpg')} alt="mid 2"/>
+                    <img src={require('./images/unsplash2.jpg')} alt="mid 2" style={{
+         objectFit: "cover",
+          height: "500px",
+          width: "100%",
+        }}/>
                     <p className="legend">Legend 2</p>
                 </div>
                 <div>
-                    <img src={require('./images/unsplash3.jpg')} alt="last 3" />
+                    <img src={require('./images/unsplash3.jpg')} alt="last 3" style={{
+         objectFit: "cover",
+          height: "500px",
+          width: "100%",
+        }}/>
                     <p className="legend">Legend 3</p>
                 </div>
                 

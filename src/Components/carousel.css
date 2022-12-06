@@ -74,6 +74,7 @@
     display: inline-block;
     height: 500px;
     pointer-events: none
+    
 }
 
 .carousel .carousel {
@@ -235,6 +236,7 @@
     width: 100%;
     vertical-align: top;
     border: 0
+
 }
 
 .carousel .slide iframe {
