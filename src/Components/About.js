@@ -102,32 +102,36 @@ const About = () => {
         <h3 style={{fontWeight:"bold"}}>People</h3>  
 
         <div id="people-center">
-                        <div className="people-member">
+                      <article className="people-member">  
+                            <div className="imageAbt">
                             <img src={require('./images/director1.jpg')} alt="first 1" />
-                            <article style={{alignContent:'center'}}>
-                        
+                            </div>
+                                <div className="description" >
                                 <h2>John Dent</h2>
                                 <h5>Director</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
-                        
+                                </div>
                             </article>   
-                        </div>
+                        
                        
                         <article className="people-member">
                         <img src={require('./images/director2.jpg')} alt="mid 2"/>
+                        <div className="description" >
                             <h2>Rita Foster</h2>
                             <h5>Finance manager</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
-                           
+                        </div>
                         </article>
+                        
                         <article className="people-member">
                         <img src={require('./images/director3.jpg')} alt="last 3" />
+                        <div className="description" >
                             <h2>Kennith Daniels</h2>
                             <h5>Fund raising promoter</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
-                           
+                        </div>
                         </article>
-                    </div>
+        </div>
 
 
         </div>

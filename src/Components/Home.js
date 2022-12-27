@@ -23,7 +23,7 @@ class Home extends Component {
           height: "500px",
           width: "100%",
         }}/>
-                    <p className="legend">Legend 1</p>
+                    
                 </div>
                 <div>
                     <img src={require('./images/unsplash2.jpg')} alt="mid 2" style={{
@@ -31,7 +31,7 @@ class Home extends Component {
           height: "500px",
           width: "100%",
         }}/>
-                    <p className="legend">Legend 2</p>
+                    
                 </div>
                 <div>
                     <img src={require('./images/unsplash3.jpg')} alt="last 3" style={{
@@ -39,7 +39,7 @@ class Home extends Component {
           height: "500px",
           width: "100%",
         }}/>
-                    <p className="legend">Legend 3</p>
+                    {/* <p className="legend">Legend 3</p> */}
                 </div>
                 
             </Carousel>
@@ -63,16 +63,18 @@ class Home extends Component {
             The operational costs of the Trust are funded from an endowment, so your generous contributions are never used to cover administration costs.</h5>
 
 
-             <div className='col '>
+                    <div className='col '>
                             <button type="button" className="btn">Donate</button>
-
-                            
-                            </div>
+                    </div>
+                    </div>
+                    <section id="team">
+                            <div className="container">
                             <div style={{position:"relative", top:50}}>
                             <iframe width="760" height="415"  src="https://www.youtube.com/embed/UtEJZTU6aS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-                </div>
-                            
-            </div>
+                            </div>
+                            </div>
+                    </section>        
+            
 
          
             </div>
